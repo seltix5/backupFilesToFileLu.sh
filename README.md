@@ -5,7 +5,7 @@ It generates and uploads backups, and deletes old ones based on a defined retent
 
 *Screenshot demo from cron job email:*
 
-![image](https://github.com/user-attachments/assets/2a31574c-aa6f-40d2-af55-0f3ca5608e73)
+![image](https://github.com/user-attachments/assets/cdc8d533-0cbc-4b75-891a-bee3fe0f3b1d)
 
 
 # Usage Possibilities

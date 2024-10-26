@@ -1,6 +1,11 @@
 # Description of backupFilesToFileLu.sh
 The backupFilesToFileLu.sh script automates the backup process to FileLu, a remote file-hosting service. It lists, uploads, and deletes files based on a defined retention period, helping to manage storage space by removing older backups. This ensures only the most recent backups are kept on the server.
 
+*Screenshot demo from cron job email:*
+
+![image](https://github.com/user-attachments/assets/2a31574c-aa6f-40d2-af55-0f3ca5608e73)
+
+
 # Usage Possibilities
 - Automate backups on any system capable of running bash scripts.
 - Schedule periodic backups via cron jobs for web hosting.

@@ -10,18 +10,18 @@
 ######################################################
 
 # Configuration
-DAYS_TO_KEEP=3
+DAYS_TO_KEEP=3 # Number of days to keep backups
 
-FOLDER_TO_BACKUP="/home/account_name/public_html"
+FOLDER_TO_BACKUP="/home/account_name/public_html" # Directory to back up
 
-BACKUP_FOLDER="/home/account_name/backups_tmp" # Folder where backups will be stored, you may use "/tmp"
-BACKUP_DELETE=true # Delete local backup after upload?
+BACKUP_FOLDER="/home/account_name/backups_tmp" # Folder for storing backups (e.g., /tmp)
+BACKUP_DELETE=true # Set to true to delete local backup files after upload
 
-BACKUP_FILENAMEPREFIX="backup_" # Common file name prefix for all backup files
-BACKUP_FILENAME="$(date +%Y%m%d_%H%M%S)"
+BACKUP_FILENAMEPREFIX="backup_" # Common prefix for all backup filenames
+BACKUP_FILENAME="$(date +%Y%m%d_%H%M%S)" # Filename with automatically generated timestamp
 
-FILELU_API_KEY="filelu_api_key"
-FILELU_FOLDER_NAME="backups" # Folder name in root of FileLu
+FILELU_API_KEY="filelu_api_key" # Your Filelu API key
+FILELU_FOLDER_NAME="backups" # Folder name on Filelu root for storing backups
 
 
 # Step 1: Create backup

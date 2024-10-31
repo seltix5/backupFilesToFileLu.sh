@@ -121,9 +121,9 @@ echo "$FILES_LIST_RESPONSE" | grep -oP '"file_code":"\K[^"]+' | while read -r RE
 		
 		#echo "Deleted file Response: $DELETE_RESPONSE" # {"server_time":"2024-10-26 18:08:28","status":200,"msg":"OK"}
 		
-		FILE_STATUS=$(echo "$DELETE_RESPONSE" | grep -oP '"file_status":"\K[^"]+')
+		DELETE_RESULT=$(echo "$DELETE_RESPONSE" | grep -oP '"msg":"\K[^"]+')
 
-		if [[ "$FILE_STATUS" != "OK" ]]; then
+		if [[ "$DELETE_RESULT" != "OK" ]]; then
 			echo "Error: File delete failed. Response: $DELETE_RESPONSE"
 			exit 1
 		fi
